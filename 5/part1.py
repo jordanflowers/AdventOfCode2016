@@ -5,7 +5,7 @@ candidate = 0
 ID = input('Enter the Door ID: ')
 indexList = []
 i = 0
-while True:
+while i < 8:
 	plaintext = ID + str(candidate)
 	hash = hashlib.md5(plaintext.encode('ascii')).hexdigest()
 	if hash[:5] == target:
